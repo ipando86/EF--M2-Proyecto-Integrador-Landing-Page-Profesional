@@ -74,5 +74,14 @@
 
         .btn-custom:hover { background-color: var(--cafe-oscuro); color: white; }
 
+        .bi-facebook {
+            color: #f0ead2;font-size: 2rem
+          }
+        .bi-instagram {
+                color: #f0ead2;font-size: 2rem
+          }
+        .bi-twitter-x {
+                color: #f0ead2;font-size: 2rem
+          }
         footer { background-color: var(--cafe-oscuro); color: white; padding: 40px 0; }
-       
+        
