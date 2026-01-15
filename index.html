@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a /Code_Coffee/</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo-200x150.png" alt="Logo Code Coffee" class="logo-nav img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reserva">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-card mx-3" id="hero-content">
+            <h1>¡CODING+COFFEE!</h1>
+            <h3>if (coffee.empty) {coffee.refill()} else {coffee.drink();code ();} </h3>
+            <a href="#menu" class="btn btn-light btn-lg">¡Llévame al café!</a>
+        </div>
+    </header>
+
+    <section id="nosotros" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/img/nosotros.jpg" class="img-fluid rounded-4 shadow" alt="Cafetería">
+            </div>
+            <div class="col-md-6 p-5">
+                <h2 class="mb-4">¿PORQUÉ /CODE_COFFEE/?</h2>
+                <p>La relación entre programadores web y café es icónica: el café, con su cafeína, es un combustible popular para la concentración, la energía y la creatividad necesarias en largas sesiones de codificación, ayudando a procesar la lógica compleja y mantener la alerta, y es una bebida casi omnipresente en entornos tecnológicos, convirtiéndose en un ritual y una herramienta esencial para muchos profesionales.</p><p> En /CODE_COFFEE te entendemos y por eso estamos orgullosos de haber creado este espacio a tu medida, salas cowork individuales y grupales junto a los mejores granos importados tostados aquí en nuestra casa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="bg-light py-5">
+        <div class="container text-center mb-5">
+            <h2>LOS MÁS VENDIDOS</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="assets/img/latte.jpg" class="card-img-top" alt="Latte">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS Latte</h5>
+                            <p class="card-text text-muted">200ml de café espresso con leche entera o leche de almendras.</p>
+                            <p class="fw-bold">$2.990</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="assets/img/coldbrew.jpg" class="card-img-top" alt="Espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Git Cold Brew</h5>
+                            <p class="card-text text-muted"> 500ml de café preparado en extracción en frío durante 18 horas.</p>
+                            <p class="fw-bold">$1.990</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="assets/img/grano.jpg" class="card-img-top" alt="Tostada">
+                        <div class="card-body">
+                            <h5 class="card-title">Café en grano blend Code Coffee</h5>
+                            <p class="card-text text-muted">250grs de café de grano de las mejores fincas de América, tostados por nosotros.</p>
+                            <p class="fw-bold">$10.990</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-5 container">
+        <h2 class="text-center mb-5">CODE_COFFEE HQ</h2>
+        <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                    <img src="assets/img/galeria1.jpg" class="d-block w-100" alt="Ambiente">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/galeria2.jpg" class="d-block w-100" alt="Barista">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide=""="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="reserva" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 shadow-lg p-5 rounded-4 bg-white">
+                <h2 class="text-center mb-4">RESERVA TU ESPACIO COWORK</h2>
+                <form id="reservaForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" id="nombref" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="correof" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Fecha</label>
+                            <input type="date" id="mensajef" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Personas</label>
+                            <select class="form-select">
+                                <option value="1">1 Persona</option>
+                                <option value="2">2 Personas</option>
+                                <option value="4">4 Personas</option>
+                                <option value="6">Más de 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" id="enviar_formulario" class="btn btn-custom w-100">Solicitar
+                            Mesa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Visítanos</h5>
+                    <p>Avenida Siempreviva 123, Chillán. </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horarios</h5>
+                    <p>Lunes - Sabado: 11:00 AM - 8:00 PM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>+56 9 87654321 | contacto@codecoffee.cl</p>
+                </div>
+            </div>
+            <hr>
+            <p class="mb-0">&copy; 2026 /Code_Coffee. Hecho con amor y bastante cafeína.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
